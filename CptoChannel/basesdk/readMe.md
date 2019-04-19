@@ -1,0 +1,5 @@
+basesdk  是一个SDK公共抽象层
+跟游戏研发对接裸包时 需要将这个lib给到游戏对接，同时这个lib在发行接入渠道SDK的时候也需要引用，
+只是最终不需要将这个lib打入裸包，只要将渠道SDK和封装类打入裸包
+SdkLifecycle 是SDK抽象接口
+ChannelSdkManage 是SDK抽象管理类

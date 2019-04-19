@@ -1,0 +1,6 @@
+这个项目 模拟发行与游戏以及CP接入的逻辑
+发行与CP 对接时.将basesdk和basechannel 发给CP ，由CP接入。CP通过调用basesdk中的ChannelSdkManage的接口来执行渠道SDK的功能。
+CP接入完成后打包生成游戏裸包，将裸包发给发行，
+发行接入一个渠道(a),将渠道A的SDK导入到ortherchannel中并封装a渠道的接口得到xxchannel类，测试调用通过后，发行将APK反编译后取出
+ortherchannel中的xxchannel类和a渠道的sdk文件和资源打入到 Cp给的裸包中。并且在裸包的manfast文件中配置XXchannel的绝对路径.
+最后将裸包生成新包再签名得到新的游戏渠道包
